@@ -1,0 +1,9 @@
+LaTeX@TU Graz
+http://latex.tugraz.at/
+
+BibTeX Search
+http://www.bibtexsearch.com/
+
+Literatur-Generator
+http://literatur-generator.de/info/bibtex
+

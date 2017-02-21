@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt]{report}
+
+% Specifies which font encoding LaTeX should use.
+\usepackage[T1]{fontenc}   
+
+% Use UTF-8 input encoding
+\usepackage[utf8]{inputenc}  
+
+% Layout-Anpassungen
+\usepackage[left=3.5cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+% Abstand zwischen zwei Zeilen eines Absatzes
+\renewcommand{\baselinestretch}{1.5}
+% Einrückung eines Absatzes
+\parindent0pt
+% Prints current chapter heading and the page number in the header on each page.
+\pagestyle{headings}
+
+% Set of commands for inclusion of graphics.
+%\usepackage{graphicx}
+\usepackage[pdftex]{color,graphicx}
+
+
+% Use the harvard family of bibliographic styles.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/harvard/
+\usepackage{harvard}
+\citationmode{abbr} 
+\bibliographystyle{agsm}
+
+% Handle URLs in your bibtex files
+\usepackage{url}
+\renewcommand{\harvardurl}[1]{\textbf{URL:} \url{#1}}
+
+
+%-----------------------------------------------------------------------------
+\begin{document}
+\bibliographystyle{agsm}
+
+%-----------------------------------------------------------------------------
+\include{TitlePage}
+
+\include{Abstract}
+
+%-----------------------------------------------------------------------------
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+%-----------------------------------------------------------------------------
+\pagenumbering{arabic}
+\input{Introduction}
+\input{RelatedWork}
+\input{Implementation}
+\input{Conclusion}
+
+\include{Appendix}
+
+%-----------------------------------------------------------------------------
+\bibliography{bibtex/DesignPatterns}
+%-----------------------------------------------------------------------------
+
+\end{document}

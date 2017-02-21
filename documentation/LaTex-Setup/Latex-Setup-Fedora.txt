@@ -1,0 +1,14 @@
+$ yum install texlive texlive-latex texlive-xetex
+$ yum install texlive-collection-latex
+$ yum install texlive-collection-latexrecommended
+$ yum install texlive-xetex-def
+$ yum install texlive-collection-xetex
+
+$ yum install texlive-collection-langgerman
+$ yum install texlive-babel-german
+
+$ yum install texlive-harvard
+$ yum install texlive-harvard-doc
+
+$ yum install texlive-multirow
+$ yum install texlive-multirow-doc
